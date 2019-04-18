@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: zuul-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka
+zuul:
+  routes:
+    FEIGN-SERVER: /feign/**
+    api-a:
+      path: /ribbon/**
+      serviceId: RIBBON-SERVER
+
