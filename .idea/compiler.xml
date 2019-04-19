@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config" />
+        <module name="config-client" />
         <module name="feign" />
+        <module name="gateway" />
         <module name="provider" />
         <module name="registry" />
         <module name="ribbon" />
@@ -17,7 +20,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config" options="-parameters" />
+      <module name="config-client" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="registry" options="-parameters" />
       <module name="ribbon" options="-parameters" />
