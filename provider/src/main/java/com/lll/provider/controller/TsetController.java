@@ -9,6 +9,11 @@ public class TsetController {
 
     @GetMapping("hello")
     public String hello(){
-        return "hello";
+        return "Hello，我是provider";
+    }
+
+    @GetMapping("hi")
+    public String hi(){
+        return "hi，我是provider";
     }
 }
